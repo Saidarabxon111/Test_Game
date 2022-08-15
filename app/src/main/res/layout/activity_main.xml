@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/draw_1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_misol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="104dp"
+        android:background="@color/black"
+        android:text="@string/app_name"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_misol"
+        app:layout_constraintTop_toTopOf="@+id/tv_misol">
+
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/Test_style"
+            android:text="@string/app_name"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+
+            style="@style/Test_style"
+            android:layout_row="0"
+            android:text="@string/app_name"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+
+            style="@style/Test_style"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+
+
+            />
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/Test_style"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+
+
+            />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:backgroundTint="@color/black"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
